@@ -187,8 +187,8 @@ Este proyecto es de código abierto bajo la licencia MIT. Siéntete libre de usa
 
 ⭐ ¿Te funcionó?
 Si este proyecto te fue útil, ¡dale una ⭐ al repositorio y compártelo! Tu apoyo nos ayuda a seguir creando contenido gratuito.
-<p align="center">
-  <b>Hecho con ❤️ por IA en Acción</b>
-</p>
-```
+
+Hecho con ❤️ por IA en Acción
+
+
 
