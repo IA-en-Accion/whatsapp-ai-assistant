@@ -22,3 +22,4 @@ Este proyecto es parte de la serie de tutoriales del canal **IA en Acción**.
 Clona este repositorio o descárgalo como ZIP y extraelo en tu computadora.
 ```bash
 cd asistente-whats
+https://github.com/IA-en-Accion/whatsapp-ai-assistant.git
