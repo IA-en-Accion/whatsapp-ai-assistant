@@ -34,31 +34,42 @@ Antes de comenzar, asegúrate de tener instalado:
 &gt; ```
 &gt; Si no tienes Node.js, descárgalo desde [https://nodejs.org/](https://nodejs.org/) e instálalo.
 
----
-
-## 🚀 Instalación Paso a Paso
-
-### Paso 1: Descarga el proyecto
-
-Abre tu terminal (PowerShell en Windows o Terminal en Mac/Linux) y ejecuta:
-
-```bash
-# Clona el repositorio
+*************************************************************************************
+# Clona el repositorio SI YA SABES USAR TERMINAL
 git clone https://github.com/IA-en-Accion/whatsapp-ai-assistant.git
 
 # Entra a la carpeta del proyecto
 cd whatsapp-ai-assistant
+**************************************************************************************
+
+## 🚀 Instalación Paso a Paso
+
+### Paso 1: Descarga el proyecto
+https://github.com/IA-en-Accion/whatsapp-ai-assistant.git
+
+<img width="1576" height="806" alt="descargar repositorio" src="https://github.com/user-attachments/assets/5e6f93ba-eb5a-4e5e-ae80-2285c4eaf55e" />
 
 🔧 Alternativa: Si prefieres no usar Git, puedes descargar el proyecto como ZIP desde el botón verde "Code" > Download ZIP en GitHub, descomprimirlo y abrir la carpeta resultante.
+<img width="1433" height="544" alt="ASIDEBE QUEDAR" src="https://github.com/user-attachments/assets/abd6c3c0-6cc2-44d8-b35e-b104ac1d4866" />
+
+<img width="1175" height="463" alt="abrir en Terminal" src="https://github.com/user-attachments/assets/160bcce3-fcf1-4a96-bb21-0e39a8c38dcf" />
+
+<img width="1280" height="570" alt="ejemplo de terminal" src="https://github.com/user-attachments/assets/b3326d68-aa69-4421-afe3-a8e8c2ea4927" />
+
+
 Paso 2: Configura tu API Key de Groq
 Ve a console.groq.com y regístrate (es gratis).
 Crea una nueva API Key.
 Guárdala bien, la necesitarás en el siguiente paso.
+<img width="1634" height="437" alt="recordatorio" src="https://github.com/user-attachments/assets/f6ca9d79-0a0b-4a16-acd9-ceebdc3c620e" />
+
 Paso 3: Configura el archivo de entorno
 Dentro de la carpeta del proyecto encontrarás un archivo llamado .env.example. Debes copiarlo y renombrarlo:
 bash
 # Windows (PowerShell)
 copy .env.example .env
+
+Abre tu terminal (PowerShell en Windows o Terminal en Mac/Linux) 
 
 # Mac / Linux
 cp .env.example .env
@@ -80,6 +91,8 @@ Esto instalará automáticamente todas las librerías necesarias:
 | `pino`                    | ^8.x    | Logger para depuración          |
 💡 Nota: La primera instalación puede tardar 1-2 minutos dependiendo de tu conexión.
 
+
+
 Paso 5: Dale personalidad a tu bot
 Abre el archivo prompts/system.txt y escribe cómo quieres que se comporte tu asistente.
 Ejemplo - Experto Vendedor:
@@ -87,6 +100,10 @@ Eres un asistente virtual experto en ventas. Hablas de forma confiable, profesio
 y concisa. No des demasiada información de golpe. Escuchas primero, entiendes la 
 necesidad del cliente y luego ofreces soluciones. Usa un tono amigable pero 
 empresarial.
+<img width="1136" height="722" alt="prompt a chat gpt" src="https://github.com/user-attachments/assets/f003c7d0-0d73-4df1-b2ab-e88f92e799f8" />
+
+<img width="1600" height="838" alt="prompt" src="https://github.com/user-attachments/assets/0f2ecbb7-d811-429a-bd92-0af266fc66f2" />
+
 
 🎨 Tip: Puedes pedirle a cualquier IA (ChatGPT, Claude, etc.) que te genere un system prompt personalizado para tu negocio y simplemente pegarlo en system.txt.
 
@@ -99,17 +116,13 @@ Abre WhatsApp en tu celular.
 Ve a Ajustes > Dispositivos vinculados > Vincular un dispositivo.
 Escanea el QR que aparece en la terminal.
 ¡Listo! Envíate un mensaje a ti mismo para probar cómo responde la IA.
+<img width="1442" height="776" alt="qr" src="https://github.com/user-attachments/assets/8d3e2764-b743-491a-9599-568577de2baa" />
 
-📂 Estructura del Proyecto
-Para mantener el código limpio y accesible, hemos separado las responsabilidades:
+<img width="1244" height="484" alt="CONECTADO ALA IA" src="https://github.com/user-attachments/assets/a2d8663f-9ecd-4a02-b315-77ca50cee77c" />
 
-| Archivo / Carpeta    | Descripción                                                                      |
-| -------------------- | -------------------------------------------------------------------------------- |
-| `index.js`           | Controla la conexión con WhatsApp y coordina todo el flujo de mensajes.          |
-| `ia.js`              | Se comunica exclusivamente con el modelo de IA (Groq).                           |
-| `prompts/system.txt` | Define la personalidad del asistente (editable por el usuario).                  |
-| `webapp.js`          | Preparado para un futuro panel web y funciones adicionales.                      |
-| `sessions/`          | *(Se genera automáticamente)* Guarda tu sesión de WhatsApp. **No la compartas.** |
+<img width="2628" height="1596" alt="FUNCIONA" src="https://github.com/user-attachments/assets/f08799bd-5074-45c1-a3cd-38bfcedfd153" />
+
+
 
 🛠️ Solución de Problemas (Errores Comunes)
 ❌ Error 1: node: command not found o 'node' no se reconoce
@@ -158,6 +171,17 @@ Verifica tu conexión a internet.
 Revisa el estado de la API en status.groq.com.
 Si es rate limit, espera unos segundos y reintenta.
 
+📂 Estructura del Proyecto
+Para mantener el código limpio y accesible, hemos separado las responsabilidades PARA QUE LO NTIENDAS MEJOR ya que estas conectado:
+
+| Archivo / Carpeta    | Descripción                                                                      |
+| -------------------- | -------------------------------------------------------------------------------- |
+| `index.js`           | Controla la conexión con WhatsApp y coordina todo el flujo de mensajes.          |
+| `ia.js`              | Se comunica exclusivamente con el modelo de IA (Groq).                           |
+| `prompts/system.txt` | Define la personalidad del asistente (editable por el usuario).                  |
+| `webapp.js`          | Preparado para un futuro panel web y funciones adicionales.                      |
+| `sessions/`          | *(Se genera automáticamente)* Guarda tu sesión de WhatsApp. **No la compartas.** |
+
 
 💡 Filosofía del Proyecto (IA en Acción)
 No queremos que este sea solo un tutorial para "copiar y pegar código". El objetivo es que entiendas la arquitectura desde el primer día. Al separar las responsabilidades, el proyecto es fácil de entender, mantener y ampliar.
@@ -188,7 +212,7 @@ Este proyecto es de código abierto bajo la licencia MIT. Siéntete libre de usa
 ⭐ ¿Te funcionó?
 Si este proyecto te fue útil, ¡dale una ⭐ al repositorio y compártelo! Tu apoyo nos ayuda a seguir creando contenido gratuito.
 
-Hecho con ❤️ por IA en Acción
+Hecho por IA en Acción
 
 
 
