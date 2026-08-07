@@ -21,5 +21,4 @@ Este proyecto es parte de la serie de tutoriales del canal **IA en Acción**.
 ### 1. Descarga el proyecto
 Clona este repositorio o descárgalo como ZIP y extraelo en tu computadora.
 ```bash
-git clone [https://github.com/tu-usuario/asistente-whats.git](https://github.com/tu-usuario/asistente-whats.git)
 cd asistente-whats
