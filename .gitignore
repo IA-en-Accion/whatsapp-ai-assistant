@@ -1,16 +1,19 @@
-# Dependencias
+# Dependencias de Node
 node_modules/
 
-# Entorno
+# Archivos de entorno (¡NO SUBIR API KEYS!)
 .env
+.env.local
+.env.*.local
 
-# Sesiones de WhatsApp (no subir al repo)
+# Sesiones de WhatsApp (Contiene datos privados de conexión)
 sessions/
 
-# Logs
-*.log
-npm-debug.log*
-
-# Sistema operativo
+# Archivos ocultos del sistema operativo (Windows/Mac)
 .DS_Store
 Thumbs.db
+
+# Archivos de log de errores
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
